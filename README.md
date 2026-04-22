@@ -126,12 +126,18 @@ cd ComfyUI/custom_nodes/Comfyui_gpt_2.0
 pip install -r requirements.txt
 ```
 
-3. Create `.env` from `.env.example`.  
-   `.env.example`를 참고해서 `.env` 파일을 만듭니다.
+3. Choose one API key setup method.  
+   아래 두 가지 중 한 가지 방식으로 API 키를 설정합니다.
+
+- Option A: Create `.env` from `.env.example` and set your OpenAI API key there.  
+  방법 A: `.env.example`를 참고해서 `.env` 파일을 만들고 OpenAI API 키를 넣습니다.
 
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
 ```
+
+- Option B: Leave `.env` empty and enter your OpenAI API key directly in the node `api_key` input inside ComfyUI.  
+  방법 B: `.env`를 비워 두고, ComfyUI 안에서 노드 `api_key` 입력칸에 OpenAI API 키를 직접 넣습니다.
 
 4. Restart ComfyUI.  
    ComfyUI를 재시작합니다.
